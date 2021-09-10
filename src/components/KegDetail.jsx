@@ -40,7 +40,8 @@ function KegDetail(props) {
 }
 
 KegDetail.propTypes = {
-  keg: PropTypes.object
+  keg: PropTypes.object,
+  onClickBuy: PropTypes.func
 };
 
 export default KegDetail;

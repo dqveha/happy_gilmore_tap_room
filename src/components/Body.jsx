@@ -19,7 +19,11 @@ class Body extends React.Component {
   buyPint = (keg) => {
     if (keg.quantity > 0) {
       keg.quantity--;
+      console.log("check")
+    } else {
+      keg.quantity = "Out of Stock"
     }
+    this.setState({selectedKeg: keg});
   }
 
   handleChangingSelectedKeg = (id) => {
