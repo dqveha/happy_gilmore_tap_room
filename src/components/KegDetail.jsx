@@ -25,7 +25,7 @@ function KegDetail(props) {
         </tr> */}
       <hr/>
     </>
-  )
+  );
 }
 
 KegDetail.propTypes = {

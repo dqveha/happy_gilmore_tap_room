@@ -45,7 +45,7 @@ class Body extends React.Component {
     let currentlyVisibleState = null;
     let buttonText = null;
 
-    if (this.state.selectedTicket != null) {
+    if (this.state.selectedKeg != null) {
       currentlyVisibleState = <KegDetail keg={this.state.selectedKeg} />
       buttonText = "Return to Keg List";
     } else if (this.state.formVisibleOnPage) {
@@ -59,20 +59,15 @@ class Body extends React.Component {
     return (
       <>
         <h3>Body</h3>
-        {/* <table>
+        <table>
           <tr>
             <th><LocationContact /></th>
             <th rowspan="2">{currentlyVisibleState}<button onClick={this.handleClick}>{buttonText}</button></th>
-            <th rowspan="2"><NewKegForm /></th>
           </tr>
           <tr>
             <th><TapRoomInfo /></th>
           </tr>
-        </table> */}
-          <LocationContact />
-          <TapRoomInfo />
-          {currentlyVisibleState}
-          <button onClick={this.handleClick}>{buttonText}</button>
+        </table>
       </>
     );
   }
