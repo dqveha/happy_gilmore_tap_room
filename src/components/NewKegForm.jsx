@@ -1,6 +1,6 @@
 import React from "react";
 
-function NewKegForm(){
+function NewKegForm(props){
   return (
     <>
       <h3>NewKegForm</h3>
