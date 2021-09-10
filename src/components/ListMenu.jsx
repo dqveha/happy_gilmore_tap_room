@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 function ListMenu(props){
   return (
     <>
-      <table>
+      {/* <table>
         <tr>
           <th>Name</th>
           <th>Brand</th>
@@ -15,21 +15,26 @@ function ListMenu(props){
           <th>Quantity</th>
           <th>Buy</th>
         </tr>
-        
-        {props.kegList.map((keg, index) =>
-          <Keg name={keg.name}
+       */}
+      <hr/>
+        {props.kegList.map((keg) =>
+          <Keg 
+            whenKegClicked={props.onKegSelection} 
+            name={keg.name}
             brand={keg.brand}
             price={keg.price}
             abv={keg.abv}
-            key={index} />
+            id={keg.id}
+            key={keg.id} />
           )}
-      </table>
+      {/* </table> */}
     </>
   )
 }
 
 ListMenu.propTypes = {
-  kegList: PropTypes.array
+  kegList: PropTypes.array,
+  onKegSelection: PropTypes.func
 }
 
 export default ListMenu;
