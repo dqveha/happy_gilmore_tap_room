@@ -1,11 +1,11 @@
 import React from "react";
-import NavBar from "./NavBar";
+import Header from "./Header";
 import Body from "./Body";
 
 function App() {
   return (
     <>
-      <NavBar />
+      <Header />
       <hr />
       <Body />
     </>
