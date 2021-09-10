@@ -1,12 +1,73 @@
-# Tap Room
+# 'Happy Gilmore' Tap Room
+
+## [https://github.com/dqveha/happy_gilmore_tap_room](https://github.com/dqveha/happy_gilmore_tap_room)
 
 #### By Dave Lindqvist
 
 ---
 
-## React Page Diagram
+## Project Description
+
+This is an independent project assigned within the Epicodus curriculum to assess the use of React fundamentals. Assignment is to build a tap room where a bar can track their kegs. Within the React components, the functional and class components are to be used while effectively utilizing local and share state.
+
+The user stories are:
+
+- As a user, I want to see a list/menu of all available kegs. For each keg, I want to see its name, brand, price and alcoholContent (or perhaps something like flavor for a kombucha store).
+- As a user, I want to submit a form to add a new keg to a list.
+- As a user, I want to be able to click on a keg to see its detail page.
+- As a user, I want to see how many pints are left in a keg. Hint: A full keg has roughly 124 pints.
+- As a user, I want to be able to click a button next to a keg whenever I sell a pint of it. This should decrease the number of pints left by 1. Pints should not be able to go below 0.
+
+## Technologies Used
+
+1. React
+2. Javascript
+3. Eslint
+4. Virtual Studio Code
+
+## React Page Component Diagram
 
 ![tap room react page diagram picture](./tap_room_diagram.png)
+
+## Setup and Installation Instructions
+
+1. Clone this repo: `git clone`
+2. Open `` directory using Virtual Studio Code
+3. Install dependencies with `npm install` in the Virtual Studio Code terminal
+4. Run it by typing in `npm start` and open [http://localhost:3000](http://localhost:3000) to view it in the browser
+5. For a production build, use `npm run build`
+
+## Known Issues:
+
+1. None so far. Please open a pull request or contact me if you have any issues!
+
+---
+
+### License is under the [MIT License](https://opensource.org/licenses/MIT). Copyright (C) 2021 Dave Lindqvist. All Rights Reserved.
+
+```
+MIT License
+
+Copyright (c) 2021 Dave Lindqvist
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
 <!-- # Getting Started with Create React App
 
