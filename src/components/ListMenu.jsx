@@ -23,7 +23,8 @@ function ListMenu(props){
             abv={keg.abv}
             id={keg.id}
             key={keg.id}
-            serial={index+1} />
+            serial={index+1}
+            quantity={keg.quantity} />
           )}
     </>
   )
