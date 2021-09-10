@@ -1,11 +1,24 @@
 import React from "react";
+import Keg from "./Keg";
+import PropTypes from "prop-types";
 
-function ListMenu(){
+
+function ListMenu(props){
   return (
     <>
-      <h3>ListMenu</h3>
+      {props.kegList.map((keg, index) =>
+        <Keg name={keg.name}
+          brand={keg.brand}
+          price={keg.price}
+          abv={keg.abv}
+          key={index} />
+        )}
     </>
   )
+}
+
+ListMenu.propTypes = {
+  kegList: PropTypes.array
 }
 
 export default ListMenu;
