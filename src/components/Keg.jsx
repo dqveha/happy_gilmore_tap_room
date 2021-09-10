@@ -8,8 +8,8 @@ function Keg(props){
         <table>
           <tr>
             <td>{props.serial}</td>
-            <td>{props.name} </td>
-            <td>{props.brand} </td>
+            <td>{props.name}</td>
+            <td>{props.brand}</td>
             <td>{props.quantity}</td>
           </tr>
         </table>
