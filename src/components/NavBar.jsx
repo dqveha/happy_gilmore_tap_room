@@ -1,0 +1,11 @@
+import React from "react";
+
+function NavBar() {
+  return (
+    <>
+      <h3>NavBar</h3>
+    </>
+  );
+}
+
+export default NavBar;
