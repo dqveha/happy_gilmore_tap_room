@@ -28,7 +28,7 @@ function KegDetail(props) {
         </tr>
         <tr>
           <td>Quantity</td>
-          <td>{keg.quantity}</td>
+          <td>{keg.quantity} Pint(s)</td>
         </tr>
         <tr>
           <td>Buy</td>
