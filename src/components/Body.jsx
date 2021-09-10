@@ -9,10 +9,13 @@ class Body extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      quantity: 124,
       formVisibleOnPage: false,
       masterKegList: []
     };
   }
+
+  buyPint = ()
 
   handleClick = () => {
     this.setState(prevState => ({
