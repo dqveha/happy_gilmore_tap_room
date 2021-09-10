@@ -16,6 +16,12 @@ class Body extends React.Component {
     };
   }
 
+  buyPint = (keg) => {
+    if (keg.quantity > 0) {
+      keg.quantity--;
+    }
+  }
+
   handleChangingSelectedKeg = (id) => {
     const selectedKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
     this.setState({
@@ -46,7 +52,9 @@ class Body extends React.Component {
     let buttonText = null;
 
     if (this.state.selectedKeg != null) {
-      currentlyVisibleState = <KegDetail keg={this.state.selectedKeg} />
+      currentlyVisibleState = <KegDetail 
+      onClickBuy={this.buyPint}
+      keg={this.state.selectedKeg} />
       buttonText = "Return to Keg List";
     } else if (this.state.formVisibleOnPage) {
       currentlyVisibleState = <NewKegForm onNewKegCreation={this.handleAddingNewKegToList} />;
