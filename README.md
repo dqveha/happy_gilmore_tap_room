@@ -10,7 +10,7 @@
 
 This is an independent project assigned within the Epicodus curriculum to assess the use of React fundamentals. Assignment is to build a tap room where a bar can track their kegs. Within the React components, the functional and class components are to be used while effectively utilizing local and share state.
 
-The user stories are:
+The presented user stories are:
 
 - As a user, I want to see a list/menu of all available kegs. For each keg, I want to see its name, brand, price and alcoholContent (or perhaps something like flavor for a kombucha store).
 - As a user, I want to submit a form to add a new keg to a list.
@@ -31,8 +31,8 @@ The user stories are:
 
 ## Setup and Installation Instructions
 
-1. Clone this repo: `git clone`
-2. Open `` directory using Virtual Studio Code
+1. Clone this repo: `git clone https://github.com/dqveha/happy_gilmore_tap_room.git`
+2. Open `happy_gilmore_tap_room` directory using Virtual Studio Code
 3. Install dependencies with `npm install` in the Virtual Studio Code terminal
 4. Run it by typing in `npm start` and open [http://localhost:3000](http://localhost:3000) to view it in the browser
 5. For a production build, use `npm run build`

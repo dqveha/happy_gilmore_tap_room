@@ -4,6 +4,7 @@ import ListMenu from "./ListMenu";
 import NewKegForm from "./NewKegForm";
 import TapRoomInfo from "./TapRoomInfo";
 import KegDetail from "./KegDetail";
+import { Container, Row, Col } from "react-bootstrap"
 
 class Body extends React.Component {
 
@@ -19,7 +20,6 @@ class Body extends React.Component {
   buyPint = (keg) => {
     if (keg.quantity > 0) {
       keg.quantity--;
-      console.log("check")
     } else {
       keg.quantity = "Out of Stock"
     }
@@ -70,16 +70,18 @@ class Body extends React.Component {
 
     return (
       <>
-        <h3>Body</h3>
-        <table>
-          <tr>
-            <th><LocationContact /></th>
-            <th rowspan="2">{currentlyVisibleState}<button onClick={this.handleClick}>{buttonText}</button></th>
-          </tr>
-          <tr>
-            <th><TapRoomInfo /></th>
-          </tr>
-        </table>
+        <Container>
+          <Row>
+            <Col>
+              <LocationContact />
+            </Col>
+            <Col>
+              <TapRoomInfo />  
+            </Col>
+              {currentlyVisibleState}
+              <button onClick={this.handleClick}>{buttonText}</button>
+          </Row>
+        </Container>
       </>
     );
   }

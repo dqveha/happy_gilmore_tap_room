@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 function ListMenu(props){
   return (
     <>
-      <table>
+      <table className="ListMenu">
         <tr>
           <th>#</th>
           <th>Name</th>

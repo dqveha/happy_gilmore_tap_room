@@ -5,9 +5,11 @@ import Body from "./Body";
 function App() {
   return (
     <>
-      <Header />
-      <hr />
-      <Body />
+      <div className="container">
+        <Header />
+        <hr />
+        <Body />
+      </div>
     </>
   );
 }

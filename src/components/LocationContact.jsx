@@ -3,7 +3,10 @@ import React from "react";
 function LocationContact(){
   return (
     <>
-      <h3>LocationContact</h3>
+      <div className="container pt-4 text-center">
+        <p>Location: 101 East 7th Avenue, Vancouver, BC Canada</p>
+        <p>Phone: 555-GILMORE</p>
+      </div>
     </>
   )
 }
