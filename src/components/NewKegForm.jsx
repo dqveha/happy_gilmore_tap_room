@@ -4,6 +4,10 @@ import PropTypes from "prop-types";
 
 function NewKegForm(props){
 
+  const myStyledComponentStyles = {
+    width: '100%',
+  }
+
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
     props.onNewKegCreation({
@@ -18,13 +22,14 @@ function NewKegForm(props){
   return (
     <>
       <form onSubmit={handleNewKegFormSubmission}>
-        <table>
+        <table style={myStyledComponentStyles}>
           <tr>
             <td>Name</td>
             <td>
               <input
               type='text'
-              name='name'/>
+              name='name'
+              className="form-control" />
             </td>
           </tr>
           <tr>
@@ -32,7 +37,8 @@ function NewKegForm(props){
             <td>
               <input
               type='text'
-              name='brand' />
+              name='brand'
+              className="form-control" />
             </td>
           </tr>
           <tr>
@@ -41,7 +47,8 @@ function NewKegForm(props){
               <input
               type='number'
               step='0.01'
-              name='price'/>
+              name='price'
+              className="form-control" />
             </td>
           </tr>
           <tr>
@@ -50,11 +57,12 @@ function NewKegForm(props){
               <input
               type='number'
               step='0.1'
-              name='abv'/>
+              name='abv'
+              className="form-control" />
             </td>
           </tr>
           <tr>
-            <td colspan="2"><button type='submit'>Add Keg</button></td>
+            <td colspan="2"><button type='submit' className="form-control" >Add Keg</button></td>
           </tr>
         </table>
       </form>

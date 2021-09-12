@@ -4,16 +4,23 @@ import PropTypes from "prop-types";
 
 
 function ListMenu(props){
+
+  const myStyledComponentStyles = {
+    width: '100%',
+  }
+
   return (
     <>
-      <table className="ListMenu">
-        <tr>
-          <th>#</th>
-          <th>Name</th>
-          <th>Brand</th>
-          <th>Quantity</th>
-        </tr>
-      </table>
+      <table className="ListMenu table" style={myStyledComponentStyles}>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+      {/* </table> */}
         {props.kegList.map((keg, index) =>
           <Keg 
             whenKegClicked={props.onKegSelection} 
