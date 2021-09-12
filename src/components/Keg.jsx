@@ -1,17 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Keg(props){
 
-  const myStyledComponentStyles = {
-    width: '100%',
-  }
+
+function Keg(props){
 
   return (
     <>
       <div onClick = {() => props.whenKegClicked(props.id)}>
-        {/* <table className="table" style={myStyledComponentStyles}> */}
-          <tbody>
+          <tbody class="text-center">
             <tr>
               <td>{props.serial}</td>
               <td>{props.name}</td>
@@ -19,7 +16,6 @@ function Keg(props){
               <td>{props.quantity}</td>
             </tr>
           </tbody>
-        </table>
       </div>
     </>
   );

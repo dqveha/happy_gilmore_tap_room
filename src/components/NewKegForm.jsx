@@ -62,7 +62,8 @@ function NewKegForm(props){
             </td>
           </tr>
           <tr>
-            <td colspan="2"><button type='submit' className="form-control" >Add Keg</button></td>
+            <td></td>
+            <td colspan="2"><button type='submit' className="form-control btn-success" >Add Keg</button></td>
           </tr>
         </table>
       </form>

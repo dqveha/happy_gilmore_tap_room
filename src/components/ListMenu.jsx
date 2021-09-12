@@ -11,7 +11,7 @@ function ListMenu(props){
 
   return (
     <>
-      <table className="ListMenu table" style={myStyledComponentStyles}>
+      <table className="ListMenu table table-bordered text-center" style={myStyledComponentStyles}>
         <thead>
           <tr>
             <th>#</th>
@@ -19,20 +19,38 @@ function ListMenu(props){
             <th>Brand</th>
             <th>Quantity</th>
           </tr>
+          <tr>
+            <td>{props.kegList.map((keg, index) =>
+            <Keg 
+              whenKegClicked={props.onKegSelection} 
+              serial={index+1}
+              id={keg.id}
+              key={keg.id}/>
+            )}</td>
+            <td>{props.kegList.map((keg) =>
+            <Keg 
+              whenKegClicked={props.onKegSelection} 
+              name={keg.name}
+              id={keg.id}
+              key={keg.id} />
+            )}</td>
+            <td>{props.kegList.map((keg) =>
+            <Keg 
+              whenKegClicked={props.onKegSelection} 
+              brand={keg.brand}
+              id={keg.id}
+              key={keg.id} />
+            )}</td>
+            <td>{props.kegList.map((keg) =>
+            <Keg 
+              whenKegClicked={props.onKegSelection} 
+              id={keg.id}
+              key={keg.id}
+              quantity={keg.quantity} />
+            )}</td>
+          </tr>
         </thead>
-      {/* </table> */}
-        {props.kegList.map((keg, index) =>
-          <Keg 
-            whenKegClicked={props.onKegSelection} 
-            name={keg.name}
-            brand={keg.brand}
-            price={keg.price}
-            abv={keg.abv}
-            id={keg.id}
-            key={keg.id}
-            serial={index+1}
-            quantity={keg.quantity} />
-          )}
+      </table>
     </>
   )
 }
