@@ -5,14 +5,13 @@ import PropTypes from "prop-types";
 
 function ListMenu(props){
 
-  const myStyledComponentStyles = {
-    width: '100%',
-  }
-
   return (
     <>
-      <table className="ListMenu table table-bordered text-center" style={myStyledComponentStyles}>
+      <table className="ListMenu table table-bordered border-dark text-center">
         <thead>
+          <tr>
+            <th colspan="4"><h2 className="text-center">Keg Inventory</h2></th>
+          </tr>
           <tr>
             <th>#</th>
             <th>Name</th>
@@ -20,34 +19,46 @@ function ListMenu(props){
             <th>Quantity</th>
           </tr>
           <tr>
-            <td>{props.kegList.map((keg, index) =>
-            <Keg 
-              whenKegClicked={props.onKegSelection} 
-              serial={index+1}
-              id={keg.id}
-              key={keg.id}/>
-            )}</td>
-            <td>{props.kegList.map((keg) =>
-            <Keg 
-              whenKegClicked={props.onKegSelection} 
-              name={keg.name}
-              id={keg.id}
-              key={keg.id} />
-            )}</td>
-            <td>{props.kegList.map((keg) =>
-            <Keg 
-              whenKegClicked={props.onKegSelection} 
-              brand={keg.brand}
-              id={keg.id}
-              key={keg.id} />
-            )}</td>
-            <td>{props.kegList.map((keg) =>
-            <Keg 
-              whenKegClicked={props.onKegSelection} 
-              id={keg.id}
-              key={keg.id}
-              quantity={keg.quantity} />
-            )}</td>
+            <td>
+              {props.kegList.map((keg, index) =>
+                <Keg 
+                  whenKegClicked={props.onKegSelection} 
+                  serial={index+1}
+                  id={keg.id}
+                  key={keg.id}
+                />
+              )}
+            </td>
+            <td>
+              {props.kegList.map((keg) =>
+                <Keg 
+                  whenKegClicked={props.onKegSelection} 
+                  name={keg.name}
+                  id={keg.id}
+                  key={keg.id} 
+                />
+              )}
+            </td>
+            <td>
+              {props.kegList.map((keg) =>
+                <Keg 
+                  whenKegClicked={props.onKegSelection} 
+                  brand={keg.brand}
+                  id={keg.id}
+                  key={keg.id} 
+                />
+              )}
+            </td>
+            <td>
+              {props.kegList.map((keg) =>
+                <Keg 
+                  whenKegClicked={props.onKegSelection} 
+                  id={keg.id}
+                  key={keg.id}
+                  quantity={keg.quantity} 
+                />
+              )}
+            </td>
           </tr>
         </thead>
       </table>

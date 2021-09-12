@@ -72,15 +72,19 @@ class Body extends React.Component {
       <>
         <Container>
           <Row>
-            <Col>
-              <LocationContact />
-            </Col>
-            <Col>
-              <TapRoomInfo />  
-            </Col>
               {currentlyVisibleState}
               <button onClick={this.handleClick}>{buttonText}</button>
           </Row>
+          <hr />
+          <Row>
+            <Col className="border-end">
+              <TapRoomInfo />  
+            </Col>
+            <Col>
+              <LocationContact />
+            </Col>
+          </Row>
+          <hr />
         </Container>
       </>
     );

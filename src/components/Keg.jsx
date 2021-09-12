@@ -8,7 +8,7 @@ function Keg(props){
   return (
     <>
       <div onClick = {() => props.whenKegClicked(props.id)}>
-          <tbody class="text-center">
+          <tbody>
             <tr>
               <td>{props.serial}</td>
               <td>{props.name}</td>
