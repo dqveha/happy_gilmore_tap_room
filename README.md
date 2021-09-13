@@ -39,8 +39,7 @@ The presented user stories are:
 
 ## Known Issues:
 
-1. There is an empty row below the table headers (i.e. #, Name, Brand, Quantity) within 'ListMenu.jsx' due to how the tables are formatted.
-2. Please open a pull request or contact me if you have any issues!
+1. No bugs/issues found. Please open a pull request or contact me if you have any issues!
 
 ---
 
