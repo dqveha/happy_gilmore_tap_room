@@ -20,11 +20,11 @@ function KegDetail(props) {
         </tr>
         <tr>
           <td>Price</td>
-          <td>{parseInt(keg.price).toFixed(2)}</td>
+          <td>${parseFloat(keg.price).toFixed(2)}</td>
         </tr>
         <tr>
           <td>ABV</td>
-          <td>{parseInt(keg.abv).toFixed(1)}%</td>
+          <td>{parseFloat(keg.abv).toFixed(1)}%</td>
         </tr>
         <tr>
           <td>Quantity</td>
